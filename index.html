@@ -10,102 +10,132 @@
 
 <body>
    <header class="cabecalho-header">
-      <div id="nome-header">
-         <h1>José Messias</h1>
-      </div>
-
-      <div id="navegacao-header">
-         <ul>
-            <li>Início</li>
-            <li>Sobre mim</li>
-            <li>Projetos</li>
-            <li>Habilidades</li>
+      <h1>Messias</h1>
+      <nav>
+         <ul class="navegacao-header">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Habilidades</a></li>
          </ul>
-      </div>
+      </nav>
    </header>
 
-   <main class="descricao-main">
+   <section aria-label="seção curriculo dowload Messias" class="descricao-section">
       <div id="texto">
-         <h4>Olá, eu sou</h4>
-         <h2>José Messias</h2>
-         <h4>Desenvolvedor Full Stack</h4>
+         <h3>Olá, eu sou</h3>
+         <h1>José Messias.</h1>
+         <h4 class="digitando">Desenvolvedor Full Stack</h4>
 
-         <div id="dowload-main">
-            <a href="#">Dowload</a>
-         </div>
+         <a href="#">Dowload CV</a>
       </div>
 
-      <div id="foto-main">
-         <img src="/assets/img/eu preto e branco.jpeg" alt="Foto Messias" height="200">
-      </div>
-   </main>
+      <img src="/assets/img/eu preto e branco.jpeg" alt="Foto Messias" height="500">
+   </section>
 
-   <main class="sobre-mim-main">
-      <div>
-         <img src="/assets/img/dev.png" alt="Imagem-dev" height="200">
-      </div>
+   <section aria-label="seção Sobre mim" class="sobre-section">
+      <img src="/assets/img/dev.png" alt="Imagem-dev" height="500">
 
       <div id="sobre">
          <h2>Sobre mim</h2>
          <p>Eu sou José Messias, estudante de ADS
-            (Análise e Desenvolvimento de sistemas)...</p>
+            (Análise e Desenvolvimento de sistemas)...
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nesciunt incidunt natus est atque dolorum assumenda nulla iste, nihil numquam, esse quasi magni molestias eos perspiciatis odit. Aut, debitis libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nesciunt incidunt natus est atque dolorum assumenda nulla iste, nihil numquam, esse quasi magni molestias eos perspiciatis odit. Aut, debitis libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nesciunt incidunt natus est atque dolorum assumenda nulla iste, nihil numquam, esse quasi magni molestias eos perspiciatis odit. Aut, debitis libero.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea nesciunt incidunt natus est atque dolorum assumenda nulla iste, nihil numquam, esse quasi magni molestias eos perspiciatis odit. Aut, debitis libero.
+         </p>
       </div>
-   </main>
+   </section>
 
-   <main class="projetos-main">
+   <section aria-label="Meus Projetos" class="projetos-section">
       <div id="titulo">
          <h2>Projetos</h2>
       </div>
 
       <div class="card-projetos">
-         <a href="#">
-            <img src="#" alt="Projeto 1">
-         </a>
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 1">
+            </a>
+         </div>
+
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 2">
+            </a>
+         </div>
+
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 3">
+            </a>
+         </div>
       </div>
 
-      <div class="card-projetos">
-         <a href="#">
-            <img src="#" alt="Projeto 2">
-         </a>
+      <!-- <div class="card-projetos">
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 4">
+            </a>
+         </div>
+
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 5">
+            </a>
+         </div>
+
+         <div>
+            <a href="#">
+               <img src="#" alt="Projeto 6">
+            </a>
+         </div>
+      </div> -->
+
+      <div class="projetos-botao">
+         <a href="#"><button>Ver mais</button></a>
+      </div>
+   </section>
+
+   <section aria-label="Minhas habilidades" class="habilidades-section">
+      <div class="titulo-habilidade">
+         <h1>Habilidades</h1>
       </div>
 
-      <div class="card-projetos">
-         <a href="#">
-            <img src="#" alt="Projeto 3">
-         </a>
-      </div>
-   </main>
-
-   <main class="habilidades-main">
-      <div id="lista-habilidades">
-         <h5 id="C#">C#</h5>
+      
+      <div>
+         <h5 class="habili-barra">C#</h5>
+         <div class="barra-progresso"></div>
       </div>
 
-      <div id="lista-habilidades">
-         <h5 id="SQL">SQL</h5>
+      <div>
+         <h5 class="habili-barra">SQL</h5>
+         <div class="barra-progresso"></div>
       </div>
 
-      <div id="lista-habilidades">
-         <h5 id="Git">Git</h5>
+      <div>
+         <h5 class="habili-barra">Git</h5>
+         <div class="barra-progresso"></div>
       </div>
 
-      <div id="lista-habilidades">
-         <h5 id="CSS">CSS 3</h5>
+      <div>
+         <h5 class="habili-barra">CSS 3</h5>
+         <div class="barra-progresso"></div>
       </div>
 
-      <div id="lista-habilidades">
-         <h5 id="HTML">HTML 5</h5>
+      <div>
+         <h5 class="habili-barra">HTML 5</h5>
+         <div class="barra-progresso"></div>
       </div>
-   </main>
+   </section>
 
    <footer class="contados-footer">
-      <div id="contatos">
-         <ul>
-            <li>Linkedin</li>
-            <li>Github</li>
-            <li>Gmail</li>
-         </ul>
-      </div>
+      <ul class="contatos">
+         <li><a href="https://www.linkedin.com/in/josecmessias/" target="_blank">Linkedin</a></li>
+         <li><a href="https://github.com/JoseCMessias" target="_blank">Github</a></li>
+         <li><a href="#">Gmail</a></li>
+      </ul>
    </footer>
 
    <script src="/assets/script.js"></script>
