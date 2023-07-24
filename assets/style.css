@@ -197,7 +197,7 @@ h4 {
 
 footer {
   background-color: #378da9;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   box-shadow: 0.5px 0.5px 10px white;
@@ -216,3 +216,5 @@ a {
   font-size: 20px;
   padding: 10px;
 }
+
+
