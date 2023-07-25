@@ -214,11 +214,12 @@ section {
 } */
 
 footer {
+  display: flex;
+  flex: 1 1 100vw;
+  justify-content: center;
+  justify-content: space-around;
   background-color: #378da9;
   padding: 10px;
-  display: flex;
-  flex: 10 10 100%;
-  justify-content: space-around;
   box-shadow: 0.5px 0.5px 10px white;
 }
 
@@ -340,26 +341,3 @@ a {
     padding: 10px;
   }
 }
-
-/* footer {
-  background-color: #378da9;
-  padding: 10px;
-  display: flex;
-  flex: 10 10 100%;
-  justify-content: space-around;
-  box-shadow: 0.5px 0.5px 10px white;
-}
-
-footer .contatos {
-  display: flex;
-  gap: 200px;
-  align-items: center;
-}
-
-.contatos li,
-a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-} */
