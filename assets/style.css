@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -7,8 +9,9 @@
 }
 
 body {
-  max-width: 1700px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100vw;
   background-color: #405d67;
 }
 
@@ -16,33 +19,41 @@ body {
 
 header {
   background-color: #378da9;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex: 10 10 100%;
   box-shadow: 0.5px 0.5px 10px white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 header h1 {
   color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.5rem;
+  font-family: "Tektur", cursive;
+  font-size: 2rem;
 }
 
 header .navegacao-header {
   display: flex;
-  gap: 50px;
   align-items: center;
+  gap: 50px;
 }
 
 .navegacao-header li a {
   color: white;
   font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
 }
 
 section {
+  display: flex;
   padding: 50px;
+  flex: 10 10 100%;
 }
 
 .descricao-section {
@@ -51,19 +62,19 @@ section {
   justify-content: space-around;
   align-items: center;
   gap: 60px;
+  margin-top: 80px;
 }
 
 .descricao-section h1 {
   color: white;
   font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Tektur", cursive;
 }
 
-.descricao-section h3,
-h4 {
+.descricao-section p {
   color: white;
   font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .descricao-section a {
@@ -72,15 +83,17 @@ h4 {
   color: white;
   padding: 15px 40px;
   border-radius: 50px;
+  font-size: 20px;
   margin-top: 40px;
   background-color: #378da9;
   border: none;
   box-shadow: 0.5px 0.5px 5px white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .descricao-section img {
   border-radius: 20px;
-  max-width: 100%;
+  max-width: 35%;
   box-shadow: 0.5px 0.5px 5px white;
 }
 
@@ -91,20 +104,24 @@ h4 {
   align-items: center;
   background-color: #8dadb7;
   gap: 60px;
-  padding: 80px;
+  padding: 75px;
 }
 
 .sobre-section h2 {
   color: white;
   font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Signika", sans-serif;
 }
 
 .sobre-section p {
   color: white;
   font-size: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 50px;
+}
+
+.sobre-section img {
+  max-width: 50%;
 }
 
 .projetos-section {
@@ -117,7 +134,7 @@ h4 {
 
 .projetos-section #titulo {
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Signika", sans-serif;
   font-size: 30px;
   margin-bottom: 50px;
 }
@@ -127,19 +144,18 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
-  gap: 80px;
+  gap: 70px;
 }
 
 .card-projetos a {
   display: flex;
   flex-direction: row;
   color: white;
-  padding: 70px 100px;
+}
+
+.card-projetos img {
   border-radius: 5px;
-  margin-top: 30px;
-  background-color: #cbebf5;
-  box-shadow: 0.5px 0.5px 5px white;
-  border: none;
+  max-height: 100px;
 }
 
 .projetos-botao button {
@@ -163,7 +179,7 @@ h4 {
 }
 
 .titulo-habilidade h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
   font-size: 40px;
   margin-bottom: 50px;
   color: white;
@@ -173,7 +189,7 @@ h4 {
   display: flex;
   justify-content: flex-start;
   align-items: end;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
   font-size: 20px;
   color: white;
   padding: 10px;
@@ -195,11 +211,20 @@ h4 {
   border-radius: 20px;
 }
 
-footer {
-  background-color: #378da9;
-  padding: 20px;
+/* .habili-lado{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+footer {
+  display: flex;
+  flex: 1 1 100vw;
+  justify-content: center;
   justify-content: space-around;
+  background-color: #378da9;
+  padding: 10px;
   box-shadow: 0.5px 0.5px 10px white;
 }
 
@@ -211,8 +236,226 @@ footer .contatos {
 
 .contatos li,
 a {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
   font-size: 20px;
   padding: 10px;
+}
+
+@media (max-width: 900px) {
+  header h1 {
+    font-size: 0.8rem;
+  }
+
+  header .navegacao-header {
+    gap: 10px;
+  }
+
+  .navegacao-header li a {
+    font-size: 10px;
+  }
+
+  .descricao-section h1 {
+    font-size: 25px;
+  }
+
+  .descricao-section p {
+    font-size: 15px;
+  }
+
+  .descricao-section a {
+    padding: 5px 15px;
+    border-radius: 25px;
+    margin-top: 15px;
+    font-size: 13px;
+  }
+
+  .sobre-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 55px;
+  }
+
+  .sobre-section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .sobre-section p {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .projetos-section #titulo {
+    font-size: 15px;
+  }
+
+  .projetos-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-projetos {
+    gap: 5px;
+  }
+
+  .card-projetos a {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
+
+  .card-projetos img {
+    max-height: 60px;
+  }
+
+  .projetos-botao button {
+    padding: 5px 40px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 11px;
+  }
+
+  .titulo-habilidade h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .habilidades-section h5 {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  .barra-progresso {
+    width: 350px;
+    height: 13px;
+  }
+
+  footer .contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .contatos li,
+  a {
+    font-size: 15px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 500px)
+{
+  header h1 {
+    font-size: 0.45rem;
+  }
+
+  header .navegacao-header {
+    gap: 0px;
+    padding: 2px;
+  }
+
+  .navegacao-header li a {
+    font-size: 6px;
+  }
+
+  .descricao-section h1 {
+    font-size: 9.5px;
+  }
+
+  .descricao-section p {
+    font-size: 10px;
+  }
+
+  .descricao-section a {
+    padding: 1px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 7px;
+  }
+
+  .descricao-section img{
+    border-radius: 50px;
+  }
+
+  .sobre-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 40px;
+  }
+
+  .sobre-section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .sobre-section p {
+    display: flex;
+    justify-content: center;
+    font-size: 9px;
+    margin-top: 20px;
+  }
+
+  .projetos-section #titulo {
+    font-size: 11px;
+    margin-bottom: 20px;
+  }
+
+  .projetos-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-projetos {
+    gap: 4px;
+  }
+
+  .card-projetos a {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-projetos img {
+    max-width: 100%;
+  }
+
+  .projetos-botao button {
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-top: 25px;
+    font-size: 6px;
+  }
+  
+  .titulo-habilidade h1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .habilidades-section h5 {
+    font-size: 8px;
+    padding: 3px;
+  }
+
+  .barra-progresso {
+    max-width: 50%;;
+    height: 7px;
+  }
+
+  footer .contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .contatos li,
+  a {
+    font-size: 9px;
+    padding: 5px;
+  }
+
 }
