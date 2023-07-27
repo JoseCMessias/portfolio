@@ -12,23 +12,26 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100vw;
-  background-color: #405d67;
+  background-color: #1f2f40;
 }
 
 /* header */
 
 header {
-  background-color: #378da9;
+  background-color: #0f1820;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex: 10 10 100%;
-  box-shadow: 0.5px 0.5px 10px white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+}
+
+span{
+  color: #3b7d37;
 }
 
 header h1 {
@@ -85,7 +88,7 @@ section {
   border-radius: 50px;
   font-size: 20px;
   margin-top: 40px;
-  background-color: #378da9;
+  background-color: #3b7d37;
   border: none;
   box-shadow: 0.5px 0.5px 5px white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -102,7 +105,7 @@ section {
   grid-template-columns: 1fr 1fr;
   justify-content: space-around;
   align-items: center;
-  background-color: #8dadb7;
+  background-color: #2e4760;
   gap: 60px;
   padding: 75px;
 }
@@ -144,7 +147,7 @@ section {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
   align-items: center;
-  gap: 70px;
+  gap: 10px;
 }
 
 .card-projetos a {
@@ -165,67 +168,17 @@ section {
   margin-top: 50px;
   border: none;
   color: white;
-  background-color: #378da9;
+  background-color: #3b7d37;
   box-shadow: 0.5px 0.5px 5px white;
 }
-
-.habilidades-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #8dadb7;
-  padding-bottom: 150px;
-}
-
-.titulo-habilidade h1 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
-  font-size: 40px;
-  margin-bottom: 50px;
-  color: white;
-}
-
-.habilidades-section h5 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: end;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana;
-  font-size: 20px;
-  color: white;
-  padding: 10px;
-}
-
-.barra-progresso {
-  width: 500px;
-  --progress: 80;
-  height: 20px;
-  background-color: white;
-  display: flex;
-  border-radius: 20px;
-}
-
-.barra-progresso::before {
-  content: "";
-  width: calc(var(--progress) * 1%);
-  background-color: #405d67;
-  border-radius: 20px;
-}
-
-/* .habili-lado{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-} */
 
 footer {
   display: flex;
   flex: 1 1 100vw;
   justify-content: center;
   justify-content: space-around;
-  background-color: #378da9;
+  background-color: #0f1820;
   padding: 10px;
-  box-shadow: 0.5px 0.5px 10px white;
 }
 
 footer .contatos {
@@ -316,21 +269,6 @@ a {
     border-radius: 10px;
     margin-top: 25px;
     font-size: 11px;
-  }
-
-  .titulo-habilidade h1 {
-    font-size: 24px;
-    margin-bottom: 25px;
-  }
-
-  .habilidades-section h5 {
-    font-size: 13px;
-    padding: 5px;
-  }
-
-  .barra-progresso {
-    width: 350px;
-    height: 13px;
   }
 
   footer .contatos {
@@ -428,21 +366,6 @@ a {
     border-radius: 10px;
     margin-top: 25px;
     font-size: 6px;
-  }
-  
-  .titulo-habilidade h1 {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-
-  .habilidades-section h5 {
-    font-size: 8px;
-    padding: 3px;
-  }
-
-  .barra-progresso {
-    max-width: 50%;;
-    height: 7px;
   }
 
   footer .contatos {
