@@ -30,7 +30,7 @@ header {
   width: 100%;
 }
 
-span{
+span {
   color: #3b7d37;
 }
 
@@ -80,18 +80,22 @@ section {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.descricao-section a {
+.descricao-section button {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 15px 40px;
+  padding: 15px 101px;
   border-radius: 50px;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 10px;
   background-color: #3b7d37;
   border: none;
   box-shadow: 0.5px 0.5px 5px white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+  display: none;
 }
 
 .descricao-section img {
@@ -285,8 +289,7 @@ a {
   }
 }
 
-@media (max-width: 500px)
-{
+@media (max-width: 500px) {
   header h1 {
     font-size: 0.7rem;
   }
@@ -315,7 +318,7 @@ a {
     font-size: 7px;
   }
 
-  .descricao-section img{
+  .descricao-section img {
     border-radius: 10px;
   }
 
@@ -380,5 +383,4 @@ a {
     font-size: 9px;
     padding: 5px;
   }
-
 }
