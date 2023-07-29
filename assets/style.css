@@ -128,7 +128,7 @@ section {
 }
 
 .sobre-section img {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .projetos-section {
@@ -141,7 +141,7 @@ section {
 
 .projetos-section #titulo {
   color: white;
-  font-family: "Signika", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
   margin-bottom: 50px;
 }
@@ -163,17 +163,40 @@ section {
 .card-projetos img {
   border-radius: 5px;
   max-height: 100px;
+  margin-top: 10px;
 }
 
-.projetos-botao button {
-  padding: 30px;
-  padding: 10px 80px;
-  border-radius: 20px;
-  margin-top: 50px;
-  border: none;
+.container-habilidade{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2e4760;
+  padding: 50px;
+}
+
+.container-habilidade h2{
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
-  background-color: #3b7d37;
-  box-shadow: 0.5px 0.5px 5px white;
+  font-size: 38px;
+  margin-bottom: 100px;
+}
+
+.habilidade{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  gap: 50px;
+}
+
+.habilidade img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 footer {
@@ -256,7 +279,7 @@ a {
   }
 
   .card-projetos {
-    gap: 5px;
+    gap: 10px;
   }
 
   .card-projetos a {
@@ -273,6 +296,14 @@ a {
     border-radius: 10px;
     margin-top: 25px;
     font-size: 11px;
+  }
+
+  .container-habilidade h2{
+    font-size: 23px;
+  }
+
+  .habilidade img{
+    max-width: 40px;
   }
 
   footer .contatos {
@@ -369,6 +400,19 @@ a {
     border-radius: 10px;
     margin-top: 25px;
     font-size: 6px;
+  }
+
+  .container-habilidade h2{
+    font-size: 18px;
+  }
+
+  .habilidade {
+    gap: 15px;
+  }
+
+  .habilidade img{
+    max-width: 30px;
+    gap: 10px;
   }
 
   footer .contatos {
