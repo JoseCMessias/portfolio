@@ -125,10 +125,11 @@ section {
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 50px;
+  text-align: justify;
 }
 
 .sobre-section img {
-  max-width: 100%;
+  max-width: 30%;
 }
 
 .projetos-section {
