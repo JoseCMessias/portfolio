@@ -90,6 +90,7 @@ section {
   margin-top: 10px;
   background-color: #3b7d37;
   border: none;
+  cursor: pointer;
   box-shadow: 0.5px 0.5px 5px white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
