@@ -1,422 +1,424 @@
 @import url("https://fonts.googleapis.com/css2?family=Tektur&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 100vw;
-  background-color: #1f2f40;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    background-color: #1f2f40;
 }
 
 /* header */
 
 header {
-  background-color: #0f1820;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex: 10 10 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    background-color: #0f1820;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 10 10 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 span {
-  color: #3b7d37;
+    color: #3b7d37;
 }
 
 header h1 {
-  color: white;
-  font-family: "Tektur", cursive;
-  font-size: 2rem;
+    color: white;
+    font-family: "Tektur", cursive;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 header .navegacao-header {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .navegacao-header li a {
-  color: white;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 
 section {
-  display: flex;
-  padding: 50px;
-  flex: 10 10 100%;
+    display: flex;
+    padding: 50px;
+    flex: 10 10 100%;
 }
 
 .descricao-section {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  align-items: center;
-  gap: 60px;
-  margin-top: 80px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    margin-top: 80px;
 }
 
 .descricao-section h1 {
-  color: white;
-  font-size: 40px;
-  font-family: "Tektur", cursive;
+    color: white;
+    font-size: 40px;
+    font-family: "Tektur", cursive;
 }
 
 .descricao-section p {
-  color: white;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .descricao-section button {
-  display: flex;
-  justify-content: center;
-  color: white;
-  padding: 15px 101px;
-  border-radius: 50px;
-  font-size: 20px;
-  margin-top: 10px;
-  background-color: #3b7d37;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0.5px 0.5px 5px white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 15px 101px;
+    border-radius: 50px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: #3b7d37;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0.5px 0.5px 5px white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container {
-  display: none;
+    display: none;
 }
 
 .descricao-section img {
-  border-radius: 20px;
-  max-width: 35%;
-  box-shadow: 0.5px 0.5px 5px white;
+    border-radius: 20px;
+    max-width: 35%;
+    box-shadow: 0.5px 0.5px 5px white;
 }
 
 .sobre-section {
-  display: flex;
-  grid-template-columns: 1fr 1fr;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #2e4760;
-  gap: 60px;
-  padding: 75px;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2e4760;
+    gap: 60px;
+    padding: 75px;
 }
 
 .sobre-section h2 {
-  color: white;
-  font-size: 40px;
-  font-family: "Signika", sans-serif;
+    color: white;
+    font-size: 40px;
+    font-family: "Signika", sans-serif;
 }
 
 .sobre-section p {
-  color: white;
-  font-size: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 50px;
-  text-align: justify;
+    color: white;
+    font-size: 20px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+    text-align: justify;
 }
 
 .sobre-section img {
-  max-width: 40%;
+    max-width: 40%;
 }
 
 .projetos-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
 }
 
 .projetos-section #titulo {
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 30px;
-  margin-bottom: 50px;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 50px;
 }
 
 .card-projetos {
-  display: flex;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
 .card-projetos a {
-  display: flex;
-  flex-direction: row;
-  color: white;
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
 
 .card-projetos img {
-  border-radius: 5px;
-  max-height: 100px;
-  margin-top: 10px;
+    border-radius: 5px;
+    max-height: 100px;
+    margin-top: 10px;
 }
 
-.container-habilidade{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #2e4760;
-  padding: 50px;
+.container-habilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2e4760;
+    padding: 50px;
 }
 
-.container-habilidade h2{
-  display: flex;
-  justify-content: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 38px;
-  margin-bottom: 100px;
+.container-habilidade h2 {
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 38px;
+    margin-bottom: 100px;
 }
 
-.habilidade{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: white;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  gap: 50px;
+.habilidade {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    gap: 50px;
 }
 
-.habilidade img{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+.habilidade img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    cursor: pointer;
 }
 
 footer {
-  display: flex;
-  flex: 1 1 100vw;
-  justify-content: center;
-  justify-content: space-around;
-  background-color: #0f1820;
-  padding: 10px;
+    display: flex;
+    flex: 1 1 100vw;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #0f1820;
+    padding: 10px;
 }
 
 footer .contatos {
-  display: flex;
-  gap: 200px;
-  align-items: center;
+    display: flex;
+    gap: 200px;
+    align-items: center;
 }
 
 .contatos li,
 a {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
 @media (max-width: 900px) {
-  header h1 {
-    font-size: 0.8rem;
-  }
+    header h1 {
+        font-size: 0.8rem;
+    }
 
-  header .navegacao-header {
-    gap: 10px;
-  }
+    header .navegacao-header {
+        gap: 10px;
+    }
 
-  .navegacao-header li a {
-    font-size: 10px;
-  }
+    .navegacao-header li a {
+        font-size: 10px;
+    }
 
-  .descricao-section h1 {
-    font-size: 25px;
-  }
+    .descricao-section h1 {
+        font-size: 25px;
+    }
 
-  .descricao-section p {
-    font-size: 15px;
-  }
+    .descricao-section p {
+        font-size: 15px;
+    }
 
-  .descricao-section button {
-    padding: 5px 65px;
-    border-radius: 25px;
-    margin-top: 10px;
-    font-size: 13px;
-  }
+    .descricao-section button {
+        padding: 5px 65px;
+        border-radius: 25px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
 
-  .sobre-section {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 55px;
-  }
+    .sobre-section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 55px;
+    }
 
-  .sobre-section h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-  }
+    .sobre-section h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
 
-  .sobre-section p {
-    display: flex;
-    justify-content: center;
-    font-size: 13px;
-    margin-top: 20px;
-  }
+    .sobre-section p {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+        margin-top: 20px;
+    }
 
-  .projetos-section #titulo {
-    font-size: 15px;
-  }
+    .projetos-section #titulo {
+        font-size: 15px;
+    }
 
-  .projetos-section {
-    display: flex;
-    justify-content: center;
-  }
+    .projetos-section {
+        display: flex;
+        justify-content: center;
+    }
 
-  .card-projetos {
-    gap: 10px;
-  }
+    .card-projetos {
+        gap: 10px;
+    }
 
-  .card-projetos a {
-    padding: 0px;
-    margin-bottom: 10px;
-  }
+    .card-projetos a {
+        padding: 0px;
+        margin-bottom: 10px;
+    }
 
-  .card-projetos img {
-    max-height: 60px;
-  }
+    .card-projetos img {
+        max-height: 60px;
+    }
 
-  .projetos-botao button {
-    padding: 5px 40px;
-    border-radius: 10px;
-    margin-top: 25px;
-    font-size: 11px;
-  }
+    .projetos-botao button {
+        padding: 5px 40px;
+        border-radius: 10px;
+        margin-top: 25px;
+        font-size: 11px;
+    }
 
-  .container-habilidade h2{
-    font-size: 23px;
-  }
+    .container-habilidade h2 {
+        font-size: 23px;
+    }
 
-  .habilidade img{
-    max-width: 40px;
-  }
+    .habilidade img {
+        max-width: 40px;
+    }
 
-  footer .contatos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-  }
+    footer .contatos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
 
-  .contatos li,
-  a {
-    font-size: 15px;
-    padding: 10px;
-  }
+    .contatos li,
+    a {
+        font-size: 15px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 500px) {
-  header h1 {
-    font-size: 0.7rem;
-  }
+    header h1 {
+        font-size: 0.7rem;
+    }
 
-  header .navegacao-header {
-    gap: 0px;
-    padding: 5px;
-  }
+    header .navegacao-header {
+        gap: 0px;
+        padding: 5px;
+    }
 
-  .navegacao-header li a {
-    font-size: 9px;
-  }
+    .navegacao-header li a {
+        font-size: 9px;
+    }
 
-  .descricao-section h1 {
-    font-size: 15px;
-  }
+    .descricao-section h1 {
+        font-size: 15px;
+    }
 
-  .descricao-section p {
-    font-size: 10px;
-  }
+    .descricao-section p {
+        font-size: 10px;
+    }
 
-  .descricao-section button {
-    padding: 4px 40px;
-    border-radius: 5px;
-    margin-top: 5px;
-    font-size: 7px;
-  }
+    .descricao-section button {
+        padding: 4px 40px;
+        border-radius: 5px;
+        margin-top: 5px;
+        font-size: 7px;
+    }
 
-  .descricao-section img {
-    border-radius: 10px;
-  }
+    .descricao-section img {
+        border-radius: 10px;
+    }
 
-  .sobre-section {
-    display: flex;
-    flex-direction: column-reverse;
-    padding: 40px;
-  }
+    .sobre-section {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 40px;
+    }
 
-  .sobre-section h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 15px;
-  }
+    .sobre-section h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
 
-  .sobre-section p {
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-    margin-top: 20px;
-  }
+    .sobre-section p {
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 20px;
+    }
 
-  .projetos-section #titulo {
-    font-size: 11px;
-    margin-bottom: 20px;
-  }
+    .projetos-section #titulo {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
 
-  .projetos-section {
-    display: flex;
-    justify-content: center;
-  }
+    .projetos-section {
+        display: flex;
+        justify-content: center;
+    }
 
-  .card-projetos a {
-    padding: 0px;
-    margin-bottom: 0px;
-  }
+    .card-projetos a {
+        padding: 0px;
+        margin-bottom: 0px;
+    }
 
-  .card-projetos img {
-    max-width: 100%;
-    height: 50px;
-  }
+    .card-projetos img {
+        max-width: 100%;
+        height: 50px;
+    }
 
-  .container-habilidade h2{
-    font-size: 18px;
-  }
+    .container-habilidade h2 {
+        font-size: 18px;
+    }
 
-  .habilidade {
-    gap: 15px;
-  }
+    .habilidade {
+        gap: 15px;
+    }
 
-  .habilidade img{
-    max-width: 30px;
-    gap: 10px;
-  }
+    .habilidade img {
+        max-width: 30px;
+        gap: 10px;
+    }
 
-  footer .contatos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-  }
+    footer .contatos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 45px;
+    }
 
-  .contatos li,
-  a {
-    font-size: 9px;
-    padding: 5px;
-  }
+    .contatos li,
+    a {
+        font-size: 9px;
+        padding: 5px;
+    }
 }
